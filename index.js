@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if(userData && userData.email === email && userData.password === password){
             alert("Login SuccessFull !");
-            window.location.replace("http://127.0.0.1:5500/dashboard.html");
+            let url = window.location.href + "dashboard";
+            window.location.replace(url);
         }
         else{
             alert("Invalid email or Password, please try again");
