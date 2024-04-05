@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="user_registration.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Information</h1>
+
+        <div id="profile" style="display:none;">
+            <h2>User Profile</h2>
+            <p><strong>Name:</strong> <span id="profileName"></span></p>
+            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+            <p><strong>Mobile:</strong> <span id="profileMobile"></span></p>
+            <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="profileDOB"></span></p>
+            <button onclick="editProfile()">Edit Profile</button>
+            <button onclick="changePassword()">Change Password</button>
+            <button onclick="backToDashboard()">Back to Dashboard</button>
+        </div>
+        <div id="editProfileForm" style="display:none;">
+            <h2>Edit Profile</h2>
+            <input type="text" id="editName" placeholder="Name">
+            <input type="email" id="editEmail" placeholder="Email">
+            <input type="tel" id="editMobile" placeholder="Mobile">
+            <select id="editGender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="date" id="editDOB" placeholder="Date of Birth">
+            <button onclick="saveProfile()">Save</button>
+            <button onclick="cancelEdit()">Cancel</button>
+        </div>
+        <div id="changePasswordForm" style="display:none;">
+            <h2>Change Password</h2>
+            <input type="password" id="currentPassword" placeholder="Current Password">
+            <input type="password" id="newPassword" placeholder="New Password">
+            <input type="password" id="confirmNewPassword" placeholder="Confirm New Password">
+            <button onclick="savePassword()">Save</button>
+            <button onclick="cancelPasswordChange()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="user_registration.js"></script>
+</body>
+</html>

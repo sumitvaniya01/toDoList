@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFE6E6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#password {
+    width: 238px;
+    height: 21px;
+    padding: 9px;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+  
+#password::placeholder {
+    color: #999; 
+}
+  
+
+h1, h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styling the input[type="date"] */
+input[type="date"] {
+    /* Changing the appearance to remove browser default styles */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Adding custom styles */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    /* Optional: Adding box shadow for visual effect */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Adding transition for smooth hover effect */
+    transition: border-color 0.3s ease;
+}
+
+/* Styling the input[type="date"] on hover */
+input[type="date"]:hover {
+    border-color: #999;
+}
+
+/* Styling the input[type="date"] on focus */
+input[type="date"]:focus {
+    outline: none;
+    border-color: #666;
+}
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#profile {
+    display: none;
+}

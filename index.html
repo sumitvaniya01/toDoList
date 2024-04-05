@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h2 class="title">Login & Signup Page :</h2>
+    </header>
+    <div class="container">
+        <!-- upper button selection for login and signup -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="signup">SignUp</button>
+        </div>
+        <!-- form selection  -->
+        <div class="form-selection">
+            <!-- login form  -->
+            <div class="login-box">
+                <input type="email" class="email ele" placeholder="youremail@email.com">
+                <input type="password" class="password ele" placeholder="password">
+                <button class="login-btn" href = "dashboard.html">Login</button>
+            </div>
+
+            <!-- signup form  -->
+
+            <!-- <div class="signup-box">
+                <input type="text" class="name ele" placeholder="Enter your name">
+                <input type="email" class="email ele" placeholder="youremail@email.com">
+                <input type="password" class="password ele" placeholder="password">
+                <input type="password" class="password ele" placeholder="confirm password">
+                <input type="password" class="password ele" placeholder="confirm password"> -->
+                <!-- <button class="signup-btn">Sign Up</button> -->
+            <!-- </div> --> 
+
+            <div class="signup-box">
+                <input type="text" class="name ele" placeholder="Enter your name">
+                <input type="email" class="email ele" placeholder="youremail@email.com">
+                <input type="password" class="password ele" placeholder="Password">
+                <input type="password" class="confirm-password ele" placeholder="Confirm Password">
+                <input type="tel" class="mobile ele" placeholder="Mobile Number">
+                <select class="gender ele">
+                    <option value="" selected disabled>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="date" class="dob ele" placeholder="Date of Birth">
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    ">
+</head>
+
+<body>
+    <div class="upper-container">
+
+        <div id="userProfile">
+            <img onclick="registration()" src="img.png" alt="User Profile">
+            <!-- <label for="img">Profile</label> -->
+        </div>
+        <div>
+            <h1>Hello There...!!</h1>
+        </div>
+
+        <div id="lgoutbtn">
+            <button id="logoutbtn" onclick="logoutbtn()" class="btn">Logout</button>
+        </div>
+
+    </div>
+    <br>
+        <div class="left-dashboard">
+            <div id="time"> </div>
+
+            <div class="weather-container">
+                <h2>Weather Information</h2>
+
+                <form id="weather-form">
+                    <input id="city-input" type="text" placeholder="Enter city name" required>
+                    <button id="submit" type="submit">Get Weather</button>
+                </form>
+
+                <div id="weather-result"></div>
+            </div>
+
+            <div class="gif">
+                <img id="random-gif" src="" alt="Random Gif">
+            </div>
+
+        </div>
+
+        <div class="task-manager">
+            <h2>Task Manager :</h2>
+            <input type="text" id="taskInput" placeholder="Enter Your Task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+            <h2>Completed Tasks</h2>
+            <ul id="completedTasks"></ul>
+            <h2>Pending Tasks</h2>
+            <ul id="pendingTasks"></ul>
+        </div>
+    
+
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
