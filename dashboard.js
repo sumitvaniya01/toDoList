@@ -53,19 +53,17 @@ function addTask() {
 }
 //---------------for logout redirecting---------
 function logoutbtn(){
-    // let url = window.location.href + "dashboard";
-    // window.location.replace(url);
-
-    let url = "https://sumitvaniya01.github.io/toDoList/";
+    let url = window.location.href + "dashboard";
     window.location.replace(url);
+
+   
 }
 
 //-------------------for registration redirecting------------
 function registration(){
-//     let url2 = window.location.href + "user_registration";
-//   window.location.replace(url2);
-let url2 = "https://sumitvaniya01.github.io/toDoList/user_registration";
-    window.location.replace(url2);
+    let url2 = window.location.href + "dashboard";
+  window.location.replace(url2);
+
 }
 //---------------------------
 function moveTaskToCompleted(taskItem) {
