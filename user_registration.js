@@ -44,7 +44,7 @@ function registerUser() {
 
     // Hide registration form and show profile
     document.getElementById("registrationForm").style.display = "none";
-    showProfile(userData);
+    showProfile();
 }
 
 function logout() {
@@ -56,7 +56,9 @@ function logout() {
     document.getElementById("profile").style.display = "none";
 }
 
-function showProfile(userData) {
+function showProfile() {
+    // localStorage.getItem(userData);
+    const userData = JSON.parse(localStorage.getItem("userData"));
     // Display user profile
     document.getElementById("profileName").textContent = userData.name;
     document.getElementById("profileEmail").textContent = userData.email;
