@@ -16,7 +16,7 @@ function addTask() {
 
     var checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.addEventListener("change", function() {
+    checkbox.addEventListener("change", function () {
         if (this.checked) {
             li.classList.add("completed");
             moveTaskToCompleted(li);
@@ -29,7 +29,7 @@ function addTask() {
 
     var editButton = document.createElement("button");
     editButton.innerText = "Edit";
-    editButton.addEventListener("click", function() {
+    editButton.addEventListener("click", function () {
         var newText = prompt("Edit task:", taskText.innerText);
         if (newText !== null) {
             taskText.innerText = newText;
@@ -39,7 +39,7 @@ function addTask() {
 
     var deleteButton = document.createElement("button");
     deleteButton.innerText = "Delete";
-    deleteButton.addEventListener("click", function() {
+    deleteButton.addEventListener("click", function () {
         if (confirm("Are you sure you want to delete this task?")) {
             li.parentNode.removeChild(li);
         }
@@ -52,17 +52,17 @@ function addTask() {
     moveTaskToPending(li);
 }
 //---------------for logout redirecting---------
-function logoutbtn(){
+function logoutbtn() {
     let url = window.location.href + "dashboard";
     window.location.replace(url);
 
-   
+
 }
 
 //-------------------for registration redirecting------------
-function registration(){
-    let url2 = window.location.href + "dashboard";
-  window.location.replace(url2);
+function registration() {
+    let url2 = window.location.href + "user_registration";
+    window.location.replace(url2);
 
 }
 //---------------------------
@@ -83,7 +83,7 @@ function moveTaskToPending(taskItem) {
 // document.addEventListener('DOMContentLoaded', function () {
 //     const API_KEY = '5e6957d44d7c20277665a5e2945031a8'; 
 //     const API_URL = 'https://api.openweathermap.org/data/2.5/weather?q=New York&appid=' + API_KEY + '&units=metric';
-    
+
 
 //     fetch(API_URL)
 //         .then(response => response.json())
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('weather-form');
     const input = document.getElementById('city-input');
     const resultContainer = document.getElementById('weather-result');
-    
+
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         const city = input.value;
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <p>Wind Speed: ${data.wind.speed} m/s</p>
                 `;
             })
-            
+
 
             .catch(error => {
                 console.log('Error fetching weather data:', error);
@@ -138,18 +138,18 @@ function updateTime() {
     const hours = now.getHours();
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
-  
+
     const timeString = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
     document.getElementById('time').innerHTML = timeString;
-  }
-  
-  function formatTime(time) {
-    return time < 10 ? '0' + time : time; 
-  }
-  
-  setInterval(updateTime, 1000);
-  
-  updateTime();
+}
+
+function formatTime(time) {
+    return time < 10 ? '0' + time : time;
+}
+
+setInterval(updateTime, 1000);
+
+updateTime();
 
 
 
