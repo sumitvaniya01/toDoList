@@ -53,7 +53,7 @@ function addTask() {
 }
 //---------------for logout redirecting---------
 function logoutbtn() {
-    let url = window.location.hostname + window.location.pathname.split('/')[1]+ "/";
+    let url = window.location.origin + "/" + window.location.pathname.split('/')[1] + "/";
     window.location.replace(url);
 
 
@@ -61,7 +61,7 @@ function logoutbtn() {
 
 //-------------------for registration redirecting------------
 function registration() {
-    let url2 = window.location.hostname + window.location.pathname.split('/')[1] + "/user_registration";
+    let url2 = window.location.origin + "/" + window.location.pathname.split('/')[1] + "/user_registration";
     window.location.replace(url2);
 
 }

@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if(userData && userData.email === email && userData.password === password){
             alert("Login SuccessFull !");
-            let url =window.location.hostname + window.location.pathname.split('/')[1]+"/dashboard";
+            let url =window.location.origin +"/"+ window.location.pathname.split('/')[1]+"/dashboard";
             window.location.replace(url);
         }
         else{

@@ -167,7 +167,7 @@ function validateMobile(mobile) {
 
 function backToDashboard() {
     // Redirect to the dashboard page
-    let url =window.location.hostname + window.location.pathname.split('/')[1]+"/dashboard";
+    let url =window.location.origin +"/"+ window.location.pathname.split('/')[1]+"/dashboard";
     window.location.replace(url);
 }
 
