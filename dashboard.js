@@ -53,13 +53,14 @@ function addTask() {
 }
 //---------------for logout redirecting---------
 function logoutbtn(){
-    let url = window.location.href + "dashboard";
-    window.location.replace("url");
+    let url = window.location.href + "index";
+    window.location.replace(url);
 }
 
 //-------------------for registration redirecting------------
 function registration(){
-  window.location.replace("http://127.0.0.1:5500/user_registration.html");
+    let url = window.location.href + "user_registration";
+  window.location.replace(url);
 }
 //---------------------------
 function moveTaskToCompleted(taskItem) {
