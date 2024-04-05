@@ -167,7 +167,8 @@ function validateMobile(mobile) {
 
 function backToDashboard() {
     // Redirect to the dashboard page
-    window.location.replace("http://127.0.0.1:5500/dashboard.html")
+    let url = window.location.href = "dashboard";
+    window.location.replace(url);
 }
 
 // Check if user is already logged in
