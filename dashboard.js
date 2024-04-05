@@ -53,7 +53,7 @@ function addTask() {
 }
 //---------------for logout redirecting---------
 function logoutbtn(){
-    let url = window.location.href + "index";
+    let url = window.location.href + "";
     window.location.replace(url);
 }
 
